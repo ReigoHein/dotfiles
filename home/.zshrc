@@ -44,3 +44,6 @@ alias vim="nvim"
 
 # rbenv init
 eval "$(rbenv init -)"
+
+# init nvm
+source /usr/share/nvm/init-nvm.sh
