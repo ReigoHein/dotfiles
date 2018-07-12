@@ -93,3 +93,5 @@ fixed-center = true
 modules-left = i3
 ; modules-center = text
 modules-right = cpu memory date
+
+tray-position = right

@@ -15,7 +15,7 @@ font:
   italic:
     family: SauceCodePro Nerd Font Mono
     style: Light
-  size: 7
+  size: 8
 
 colors:
   primary:
