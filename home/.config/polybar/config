@@ -51,15 +51,21 @@ label = "CPU %percentage%%"
 
 [module/date]
 type = internal/date
-interval = 1.0
+interval = 1
 date = "%A, %m/%d/%y"
 time = "%r (%Z)"
 label = "%date% - %time%"
 
 [module/memory]
 type = internal/memory
-interval = 1.0
+interval = 1
 label = "RAM %gb_used% / %gb_free%"
+
+[module/battery]
+type = internal/battery
+full-at = 98
+battery = BAT0
+poll-interval = 10
 
 [bar/default]
 locale = en_US.UTF-8
@@ -92,6 +98,6 @@ fixed-center = true
 
 modules-left = i3
 ; modules-center = text
-modules-right = cpu memory date
+modules-right = battery cpu memory date
 
 tray-position = right

@@ -100,7 +100,7 @@ set wrap "Wrap lines
 set nojoinspaces
 
 " Automatic save on buffer change etc
-set autowriteall
+" set autowriteall
 
 " Use relative numbers
 " set relativenumber

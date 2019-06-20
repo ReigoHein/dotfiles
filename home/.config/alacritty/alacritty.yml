@@ -15,7 +15,7 @@ font:
   italic:
     family: SauceCodePro Nerd Font Mono
     style: Light
-  size: 8
+  size: 10
 
 colors:
   primary:
@@ -107,14 +107,12 @@ mouse:
   # scrolling for applications like `man`.
   #
   # To disable this completely, set `faux_scrollback_lines` to 0.
-  faux_scrollback_lines: 1
+  faux_scrolling_lines: 1
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
 dynamic_title: true
-
-hide_cursor_when_typing: false
 
 # Style of the cursor
 #
@@ -122,9 +120,11 @@ hide_cursor_when_typing: false
 # - Block
 # - Underline
 # - Beam
-cursor_style: Block
+cursor:
+  style: Block
+  hide_when_typing: false
+  custom_cursor_colors: true
 
-# Live config reload (changes require restart)
 live_config_reload: true
 
 # Shell

@@ -9,6 +9,7 @@ zstyle :compinstall filename '/home/hein/.zshrc'
 
 autoload -Uz compinit
 compinit
+kitty + complete setup zsh | source /dev/stdin
 # End of lines added by compinstall
 
 # Arrow autocompletion
@@ -45,8 +46,6 @@ alias vim="nvim"
 # rbenv init
 eval "$(rbenv init -)"
 
-export WINEARCH=win32
-
 # init nvm
 source /usr/share/nvm/init-nvm.sh
 
@@ -57,3 +56,9 @@ source /usr/share/nvm/init-nvm.sh
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /home/hein/Dashbird/Repositories/dashbird.io/node_modules/tabtab/.completions/sls.zsh ]] && . /home/hein/Dashbird/Repositories/dashbird.io/node_modules/tabtab/.completions/sls.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval `ssh-agent` > /dev/null
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /home/hein/Dashbird/Repositories/logbird/node_modules/tabtab/.completions/slss.zsh ]] && . /home/hein/Dashbird/Repositories/logbird/node_modules/tabtab/.completions/slss.zsh

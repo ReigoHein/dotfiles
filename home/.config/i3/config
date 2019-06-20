@@ -214,7 +214,7 @@ bar {
 	tray_output none
 	status_command i3status   
 }
-exec_always --no-startup-id feh --bg-scale ~/Assets/Wallpapers/planets.png
+exec_always --no-startup-id feh --bg-fill ~/Assets/Wallpapers/IMG_5368.jpg
 exec_always --no-startup-id setxkbmap -model pc105 -layout ee,us -option grp:alt_shift_toggle
 #exec_always --no-startup-id exec_always --no-startup-id xrandr --output HDMI-1 --primary --left-of DP-2 --output eDP-1 --off
 #exec_always --no-startup-id mopidy
@@ -225,3 +225,7 @@ exec --no-startup-id redshift-gtk
 
 # Workaround for Xorg
 exec --no-startup-id xrandr --auto
+
+# Start Bluetooth
+exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-manager
